@@ -1,0 +1,61 @@
+.game {
+ width: 700px;
+ height: 200px;
+ margin: auto;
+border-bottom: 1px solid black;
+}
+
+#rabbit {
+    width: 20px;
+    height: 25px;
+    background-image: url(img/rabbit.png);
+    background-size: contain;
+    position: relative;
+    top: 175px;
+}
+
+#cactus {
+    width: 20px;
+    height: 30px;
+    background-image: url(img/cactus.png);
+    background-size: 20px 30px;
+    position: relative;
+    top: 145px;
+    left: 580px;
+    animation: cactusMove 2s infinite linear;
+}
+
+.jump {
+    animation: jump 0.7s linear;
+}
+
+@keyframes cactusMove {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 110px;
+    }
+
+    60% {
+        top: 50px;
+    }
+
+    80% {
+        top: 110px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
